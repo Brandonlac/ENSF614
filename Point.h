@@ -1,8 +1,8 @@
 // Point.h
 // ENSF 614 Fall 2022 LAB 5 - EXERCISE A
 
-#ifndef Point
-#define Point
+#ifndef Point_H
+#define Point_H
 /* The following class definition represnets Complex Numbers and contains two
  * private data members called realM (the real part of a complex number),
  * and imagM (the imaginary part of a complex number).
@@ -15,13 +15,15 @@ private:
     int id;
 
 public:
+    Point(double x, double y);
+    // Constructor
     int counter() const;
     // PROMISES: to return the number of objects of class Point at anytime.
 
-    static double distance();
+    static double distance(Point &p, Point &op);
     // PROMISES: to return the distance between 2 points.
 
-    double distance();
+    double distance(Point &p);
     // PROMISES: to return the distance between 2 points.
 
     void display();
@@ -29,12 +31,16 @@ public:
     // X-coordinate: ######.##
     // Y-coordinate: ######.##
 
-    double getX() const;
+    double getx() const;
+    // PROMISES to retrieve the x value of point
 
-    double getY() const;
+    double gety() const;
+    // PROMISES to retrieve the y value of point
 
-    void setX(double x);
+    void setx(double x);
+    // PROMISES to set the x value of point
 
-    void setY(double y);
+    void sety(double y);
+    // PROMISES to set the y value of point
 };
 #endif

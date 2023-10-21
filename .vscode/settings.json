@@ -1,3 +1,15 @@
 {
-    "C_Cpp.default.compilerPath": "C:\\cygwin64\\bin\\g++.exe"
+    "C_Cpp.default.compilerPath": "C:\\cygwin64\\bin\\g++.exe",
+    "files.associations": {
+        "iterator": "cpp",
+        "typeindex": "cpp",
+        "typeinfo": "cpp",
+        "*.inc": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "chrono": "cpp",
+        "complex": "cpp",
+        "valarray": "cpp",
+        "cmath": "cpp"
+    }
 }

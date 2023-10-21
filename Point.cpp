@@ -2,30 +2,44 @@
 // ENSF 614 Fall 2022 LAB 5 - EXERCISE A
 #include "Point.h"
 #include <iostream>
+#include <cmath>
 
-Point::Point(double x, double y) : x(x),
-                                   y(y), id(1001)
+Point::Point(double x, double y)
 {
+
+    this->x = x;
+    this->y = y;
+    id = 1001;
 }
 
-double Point::getX() const
+double Point::getx() const
 {
     return x;
 }
 
-double Point::getY() const
+double Point::gety() const
 {
     return y;
 }
 
-void Point::setX(double x)
+void Point::setx(double x)
 {
 
-    x = x;
+    this->x = x;
 }
 
-void Point::setY(double y)
+void Point::sety(double y)
 {
 
-    y = y;
+    this->y = y;
+}
+
+double Point::distance(Point &p)
+{
+    return (pow(pow(abs(p.x - x), 2) + pow(abs(p.y - y), 2), 0.5));
+}
+
+double Point::distance(Point &p, Point &op)
+{
+    return (pow(pow(abs(p.getx() - op.getx()), 2) + pow(abs(p.gety() - op.gety()), 2), 0.5));
 }
