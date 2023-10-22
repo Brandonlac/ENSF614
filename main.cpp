@@ -4,5 +4,4 @@ int main()
 {
     GraphicsWorld b = GraphicsWorld();
     b.run();
-    return 0;
 }

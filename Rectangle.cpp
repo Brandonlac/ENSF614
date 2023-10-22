@@ -5,9 +5,8 @@
 using namespace std;
 
 Rectangle::Rectangle(double x, double y, double side_a,
-                     double side_b, char const *n) : Square(x, y, side_a, n)
+                     double side_b, char const *n) : Shape(x, y, n), Square(x, y, side_a, n), side_b(side_b)
 {
-    this->side_b = side_b;
 }
 double Rectangle::area() const
 {

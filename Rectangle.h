@@ -15,17 +15,17 @@ public:
     // PROMISES: sets the value of side_b.
     double getSideB() const;
     // PROMISES: returns the value of side_b.
-    virtual void display() const;
+    void display() const;
     // PROMISES:  that prints on the screen the Rectangle’s name, x and y coordinates
     //            of point origin,side a,side_b, area, and perimeter in the following format:
-    //            Square Name:
+    //            Rectangle Name:
     //            X-coordinate:
     //            Y-coordinate:
     //            side a:
     //            Area:
     //            Perimeter
 
-private:
+protected:
     double side_b;
 };
 
